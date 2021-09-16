@@ -40,17 +40,18 @@ footer.main-footer {
     border-bottom: 1px solid var(--color-line);
     text-decoration: none;
     text-transform: uppercase;
+    text-align: right;
     word-wrap: break-word;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     color: var(--color-text);
     font-size: .6rem;
 
     @include grid-media(tablet) {
       position: absolute;
-      width: 64px;
-      transform: rotate(-90deg);
+      width: 200px;
+      /* transform: rotate(-90deg);*/
       right: -12px;
-      bottom: 12px;
+      bottom: 3px;
     }
   }
 }
