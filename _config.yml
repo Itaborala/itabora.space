@@ -67,14 +67,18 @@ compress_html: # http://jch.penibelst.de/
 
 # Structure
 navigation:
-  - title: Landing
-    url: /
-  - title: Projects
-    url: /project
-  - title: Fonts
-    url: /fonts
+#  - title: Home
+#    url: /
   - title: About
     url: /about
+  - title: Projects_Collaborations 
+    url: /projects_collaborations
+  - title: Instruments
+    url: /instruments
+  - title: Origami
+    url: /origami
+  - title: Research
+    url: /research
   - title: Contact
     url: /contact
 
