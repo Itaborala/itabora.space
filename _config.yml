@@ -18,27 +18,27 @@ include:
   - _redirects
 
 # Site settings
-title: Matt Grey
-long-title: Matt Grey Design
-email: mattgreydesign@gmail.com
-description: "The selected portfolio of London based digital product designer Matt Grey"
+title: ITABORA*
+long-title: Itabora[space]
+email: itaborapuy@gmail.com
+description: "Portfolio of the music technologist and multimedia artist Paulo Vitor Itaboraí"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://himatt.com" # the base hostname & protocol for your site
+url: "https://itabora.space" # the base hostname & protocol for your site
 timezone: Europe/London
 year: 2021
-start-year: 2010
+start-year: 2021
 sitemap: true
 
 # Social networks
 social-username:
-  twitter: "@mattgreydesign"
-  linkedin: "himatt"
-  github: "mattgreydesign"
-  medium: "@mattgreydesign"
-  pinterest: "mattgreydesign"
-  instagram: "mattgreydesign"
-  flickr: "mattgreydesign"
-  spotify: "mattgreydesign"
+  #twitter: "@mattgreydesign"
+  #linkedin: "himatt"
+  github: "itaborala"
+  #medium: "@mattgreydesign"
+  #pinterest: "mattgreydesign"
+  instagram: "itaborapuy"
+  #flickr: "mattgreydesign"
+  #spotify: "mattgreydesign"
 
 # Content
 image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
@@ -67,8 +67,10 @@ compress_html: # http://jch.penibelst.de/
 
 # Structure
 navigation:
-  - title: Projects
+  - title: Landing
     url: /
+  - title: Projects
+    url: /project
   - title: Fonts
     url: /fonts
   - title: About
