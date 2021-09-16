@@ -1,8 +1,9 @@
-# itabora.space
+# ITABORA*    ``` ``` ``` ``` ``` ```    [itabora.space](https://itabora.space)
 
-Personal website & portfolio made with [Jekyll](https://jekyllrb.com/)
+
 ### This repository was forked from [Matthew Grey's repository](https://github.com/MattGreyDesign/himatt.com) and its subsequent website, [himatt.com](https://himatt.com)
 
+Personal website & portfolio made with [Jekyll](https://jekyllrb.com/)
 
 ## Setup
 
