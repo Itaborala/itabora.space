@@ -75,8 +75,8 @@ navigation:
     url: /projects_collaborations
   - title: Instruments
     url: /instruments
-  - title: Origami
-    url: /origami
+  - title: Origamis
+    url: /origamis
   - title: Research
     url: /research
   - title: Contact
@@ -89,9 +89,15 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  fonts:
+  research:
     output: true
-    permalink: /fonts/:path/
+    permalink: /research/:path/
+  instruments:
+    output: true
+    permalink: /instruments/:path/
+  origamis:
+    output: true
+    permalink: /origamis/:path/
 
 defaults:
   - scope:
@@ -101,6 +107,16 @@ defaults:
       layout: "project"
   - scope:
       path: ""
-      type: "fonts"
+      type: "research"
     values:
-      layout: "font"
+      layout: "article"
+  - scope:
+      path: ""
+      type: "instruments"
+    values:
+      layout: "instrument"
+  - scope:
+      path: ""
+      type: "origamis"
+    values:
+      layout: "origami"
