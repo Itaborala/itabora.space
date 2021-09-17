@@ -1,0 +1,29 @@
+---
+layout: page
+title_override: Itabora*
+permalink: /
+priority: 1.0
+---
+
+<div class="projects-intro-wrapper">
+  <!--<p class="projects-intro type-level-1">Paulo&nbsp;Vitor&nbsp;Itaboraí is a Music Technologist and Multimedia Artist living in São&nbsp;Paulo,&nbsp;Brazil.</p>-->
+  <p class="projects-intro type-level-1">ITABORA*</p>
+</div>
+
+<div class="projects">
+{% for project in site.landing reversed limit:include.limit %}
+  <article class="project-listing">
+    <div class="thumbnail-wrapper">
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        <div class="thumbnail-description-wrapper">
+          <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
+          <p class="thumbnail-description">
+            <span>{{ project.description }}</span>
+          </p>
+        </div>
+        <h3 aria-hidden="true">{{ project.title }}</h3>
+      </a>
+    </div>
+  </article>
+{% endfor %}
+</div>

@@ -1,0 +1,103 @@
+.instrument-wrapper {
+
+  //Layout
+  .instrument-info {
+    @extend .grid-container;
+
+    .instrument-intro {
+      @include grid-column(12);
+
+      @include grid-media(tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(2,8);
+      }
+    }
+
+    .instrument-details {
+      @include grid-column(12);
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(10,11);
+      }
+    }
+  }
+
+  .instrument-details {
+    .instrument-detail-wrapper {
+      @extend .grid-container-nested-small;
+
+      .instrument-detail-6 {
+        @include grid-column(6);
+
+        @include grid-media(phablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media(tablet) {
+          @include grid-column(2);
+        }
+
+        @include grid-media(desktop) {
+          @include grid-column(6);
+        }
+      }
+
+      .instrument-detail-12 {
+        @include grid-column(6);
+
+        @include grid-media(tablet) {
+          @include grid-column(3);
+        }
+
+        @include grid-media(desktop) {
+          @include grid-column(6);
+        }
+      }
+    }
+  }
+
+  .instrument-text {
+    @extend .grid-container;
+
+    .instrument-text-wrapper {
+      @include grid-column(12);
+
+      @include grid-media(tablet) {
+        @include grid-column(12);
+      }
+
+      @include grid-media(desktop) {
+        @include grid-column-from-to(2,8);
+      }
+    }
+  }
+
+//   //Styles
+  .image-wrapper {
+    .image-wrapper img { width: 100%; }
+
+    figcaption {
+      margin-top: rem(12px);
+      margin-bottom: rem(16px);
+    }
+
+    &.nudge-down-5 {
+      @include grid-media(desktop) {
+        margin-top: 5%;
+      }
+    }
+  }
+
+  .instrument-info {
+    margin-bottom: rem(40px);
+  }
+
+  .instrument-text {
+    @include grid-media(desktop) {
+      margin-top: var(--gutter-row);
+    }
+  }
+}

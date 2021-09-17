@@ -1,0 +1,61 @@
+---
+layout: page
+title: "Research"
+permalink: /research/
+#redirect_from: /projects/typefaces
+priority: 0.9
+sitemap: true
+---
+
+<div class="research-intro">
+  <div class="research-intro-description type-level-4">
+    <p class="paragraph-large">
+        ! This Page is Under Construction !
+    </p>
+  </div>
+
+  <div class="research-intro-info">
+    <p class="paragraph-small">
+      SLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co. <a href="/contact">Contact me</a> to reprehenderit in voluptate velit esse cillum dolore eu. 
+
+      <br/><br/>
+
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      <a href="//itabora.space">Homepage</a>
+    </p>
+  </div>
+</div>
+
+<div class="research">
+
+{% assign fontslist = site.research | sort:"order_number" %}
+{% for article in fontslist %}
+
+{% assign fontSlug = article.title | slugify %}
+
+{% capture previewImagePath %}{{ site.image_serve_path | append: '/research/'}}{{ fontSlug }}{% endcapture %}
+
+{% capture firstVendorURL %}
+    {% for vendor in article.vendors limit:1 %}{{ vendor.url }}{% endfor%}
+{% endcapture %}
+
+<article class="article-listing">
+  <div class="article-listing-details">
+    <h2 class="article-listing-title type-level-3"><a href="{{ firstVendorURL }}">{{ article.title }}</a></h2>
+    <p class="article-listing-styles title-label">{{ article.font_weights | size }} Styles</p>
+    {% for vendor in article.vendors limit:3 %}
+    {% capture vendorReferral %}{% if vendor.title == "Fontspring"%}?refby=mattgrey{% endif %}{% endcapture %}
+  <a class="{% if forloop.first == true %}button-secondary button--small {% else %}article-listing-link-tertiary{% endif %} article-listing-vendor-link formatted-link" href="{{ vendor.url | append: vendorReferral }}" title="View/purchase on {{ vendor.title }} ({{ vendor.licence }} license)">{{ vendor.title }}</a> {% if forloop.last == false %}<span class="article-listing-vendor-link-separator">/</span>{% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="article-listing-preview">
+    <div class="article-listing-preview-overflow">
+      <img src="{{ previewImagePath }}/{{ fontSlug }}.svg" alt="{{ article.title }}">
+    </div>
+  </div>
+
+</article>
+
+{% endfor %}
+</div>

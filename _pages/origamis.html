@@ -1,0 +1,28 @@
+---
+layout: page
+title_override: Itaborigami
+permalink: /origamis/
+priority: 0.9
+---
+
+<div class="origamis-intro-wrapper">
+<!--  <p class="origamis-intro type-level-1">origami Paulo&nbsp;Vitor&nbsp;Itaboraí is a Music Technologist and Multimedia Artist living in São&nbsp;Paulo,&nbsp;Brazil.</p>-->
+</div>
+
+<div class="origamis">
+{% for origami in site.origamis reversed limit:include.limit %}
+  <article class="origami-listing">
+    <div class="thumbnail-wrapper">
+      <a href="{{ origami.url | prepend: site.baseurl }}">
+        <div class="thumbnail-description-wrapper">
+          <img src="{{ origami.thumbnail | prepend: site.image_serve_path }}" alt="{{ origami.title }}" width="600" height="450">
+          <p class="thumbnail-description">
+            <span>{{ origami.description }}</span>
+          </p>
+        </div>
+        <h3 aria-hidden="true">{{ origami.title }}</h3>
+      </a>
+    </div>
+  </article>
+{% endfor %}
+</div>
