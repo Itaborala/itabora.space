@@ -42,10 +42,15 @@
   --inner-padding: #{rem(16px)};
   --inner-padding-horizontal: #{rem(10px)};
 
-  --color-primary: 255,255,255;
-  --color-secondary: 33,33,33;
-  --color-tertiary: 0, 0, 255;
-  --color-action: #65ff80;
+  /*--color-primary: 255,255,255;*/
+  --color-primary: 199,184,171;
+  /*--color-secondary: 33,33,33;*/
+  --color-secondary: 25,33,39;
+  /*--color-tertiary: 0, 0, 255;*/
+  --color-tertiary: 46, 81, 104;
+  /*--color-action: #65ff80;*/
+  /*--color-action: #499956;*/
+  --color-action: #36d1a7;
 
   --color-highlight-rgb: var(--color-tertiary);
   --color-highlight: rgb(var(--color-highlight-rgb));
