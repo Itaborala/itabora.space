@@ -1,0 +1,144 @@
+.itabora {
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: normal;
+}
+.itabora:after {
+    font-size: 6.3rem;
+    font-weight: 100;
+    content: "a*";
+    color: var(--color-text);
+    animation: shuffle 50s infinite;
+    /*animation: test 3500ms infinite;*/
+}
+
+@keyframes shuffle {
+    0% { content: "*"; }
+    3.9% { content: "*"; }
+    4% { content: "sya_"; }
+    4.25% { content: "¨6@"; }
+    4.5% { content: ">~"; }
+    4.75% { content: "==ç\'"; }
+    5% { content: "v^"; }
+    8.25% { content: "_"; }
+    13% { content: "_"; }
+    13.25% { content: "#"; }
+    15% { content: "_"; }
+    16.75% { content: "_"; }
+    17% { content: "__"; }
+    17.25% { content: "___"; }
+    17.5% { content: "____"; }
+    17.75% { content: "_____"; }
+    18% { content: "====="; }
+    18.25% { content: "-----"; }
+    18.5% { content: "~~~~~"; }
+    18.75% { content: "a~~~~"; }
+    19% { content: "&j~~~"; }
+    19.25% { content: "t[o~~"; }
+    19.5% { content: "vº+r~"; }
+    19.75% { content: "1a\;h"; }
+    20% { content: "en8/k"; }
+    20.25% { content: ",çazx"; }
+    20.5% { content: "|||||"; }
+    20.75% { content: ">epª-"; }
+    21% { content: "swerb"; }
+    21.25% { content: "sp§rd"; }
+    21.5% { content: "spa)!"; }
+    21.75% { content: "spac*"; }
+    22% { content: "space"; font-style: normal; }
+    26.75% { content: "space"; font-style: italic; }
+    27% { content: "space"; font-style: italic; }
+    31% { content: "space"; font-style: italic; }
+    31.5% { content: "space"; font-style: normal; }
+    31.75% { content: "tdw"; }
+    32% { content: "obs"; }
+    32.25% { content: "pd"; }
+    32.5% { content: "scd"; }
+    32.75% { content: "qu"; }
+    33% { content: "max"; }
+    33.25% { content: "---"; }
+    33.5% { content: "/\\\\"; }
+    34.5% { content: "//\\"; }
+    35.5% { content: "/\\\\"; }
+    36.5% { content: "\\\\/"; }
+    36.75% { content: "¬¬"; }
+    37% { content: ","; }
+    45% { content: ","; }
+    45.25% { content: "."; }
+    46.5% { content: "."; }
+    46.75% { content: "?"; }
+    47% { content: "?"; }
+    47.25% { content: "[)"; }
+    48.25% { content: "[\ )"; }
+    48.5% { content: "[\ \ )"; }
+    48.75% { content: "[\ \ \ )"; }
+    49.25% { content: "   \ \ \ \ )"; }
+    52.75% { content: "   \ \ \ \ )"; }
+    53% { content: "(\ \ \ \ "; }
+    55.75% { content: "(\ \ \ \ "; }
+    56% { content: "|\ \ \ \ "; }
+    58% { content: "\\"; }
+    60% { content: "-"; }
+    62% { content: "/"; }
+    63% { content: "|"; }
+    64% { content: "\\"; }
+    65% { content: "-"; }
+    66% { content: "/"; }
+    67% { content: "|"; }
+    67.5% { content: "\\"; }
+    68% { content: "-"; }
+    68.5% { content: "/"; }
+    69% { content: "|"; }
+    69.5% { content: "\\"; }
+    70% { content: "-"; }
+    70.25% { content: "/"; }
+    70.5% { content: "|"; }
+    70.75% { content: "\\"; }
+    71% { content: "-"; }
+    71.25% { content: "/"; }
+    71.5% { content: "|"; }
+    71.75% { content: "\\"; }
+    72% { content: "-"; }
+    72.2% { content: "/"; }
+    72.4% { content: "|"; }
+    72.6% { content: "\\"; }
+    72.8% { content: "-"; }
+    73% { content: "/"; }
+    73.2% { content: "|"; }
+    73.4% { content: "\\"; }
+    73.6% { content: "-"; }
+    73.8% { content: "/"; }
+    74% { content: "|"; }
+    74.2% { content: "\\"; }
+    74.4% { content: "-"; }
+    74.6% { content: "*"; color: var(--color-text); }
+    80% { content: "*"; color: var(--color-background); }
+    99% { content: "*"; color: var(--color-text); }
+    100% { content: "*"; }
+}
+
+@keyframes test {
+    0% {
+        font-style: italic;
+    }
+    20% {
+        font-style: normal;
+    }
+    30% {
+        font-style: italic;
+    }
+    55% {
+        font-style: normal;
+    }
+    85% {
+        font-style: normal;
+    }
+    87% {
+        font-style: italic;
+    }
+    100% {
+        font-style: normal;
+    }
+}
+
+

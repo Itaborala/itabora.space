@@ -37,8 +37,10 @@
 @import "site/layouts/origamis";
 @import "site/layouts/origami";
 @import "site/layouts/research";
-// @import "site/layouts/font";
+@import "site/layouts/landing";
 @import "site/layouts/about";
-@import "site/layouts/where-ive-been";
 @import "site/layouts/contact";
 @import "site/layouts/message";
+
+// Animations
+@import "site/animations/shuffle";
