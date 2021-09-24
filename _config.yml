@@ -12,6 +12,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - mg-fonts
+  - mg-projects
+  - ftp.sh
 
 include:
   - _pages
