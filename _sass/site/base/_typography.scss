@@ -1,8 +1,12 @@
-$font-family-primary: 'DM Sans', -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$font-family-secondary: 'DM Serif Display', serif;
+/*$font-family-primary: 'DM Sans', -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;*/
+
+
+$font-family-primary: 'Victor Mono';
+$font-family-secondary: 'Victor Mono';
+/*$font-family-secondary: 'DM Serif Display', serif;*/
 
 html {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   font-family: $font-family-primary;
   font-size: var(--font-size-root);
   color: var(--color-text);

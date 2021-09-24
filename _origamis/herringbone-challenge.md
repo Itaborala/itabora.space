@@ -9,7 +9,7 @@ disciplines: Origami, Tesselation,
 media: Book
 ownership: Personal
 client:
-time_period: 2011
+time_period: 2020
 thumbnail: "/origamis/herringbone-challenge/herringbone-back.jpg"
 
 intro: |
