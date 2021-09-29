@@ -2,7 +2,6 @@
 layout: default
 title-class: instrument
 ---
-
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -66,6 +65,18 @@ title-class: instrument
   {% endfor %}
   </section>
 
+  <section>
+  {% if page.albumname %}
+  <div>
+  
+  <ol>
+  {% include album.html albumname="trilobita" %}
+  </ol>
+  </div>
+  {% endif %}
+  </section>
+
+
   {% if page.content %}
   <section class="additional-content-wrapper">
     <div class="additional-content">
@@ -74,3 +85,19 @@ title-class: instrument
   </section>
   {% endif %}
 </div>
+<!--<script type="text/javascript" src="../../assets/js/lightbox.js"></script>-->
+<!--<script type="text/javascript" src="../../assets/js/lightbox.js"></script>-->
+<!--
+    $('#gallery a').each(function(indx, element){
+        $(element).lightBox();
+    });
+ 
+</script>
+<link rel="stylesheet" href="/css/lightbox.css">-->
+<!--<script>
+
+    $('#gallery a').each(function(indx, element){
+        $(element).lightBox();
+    });
+ 
+</script>-->

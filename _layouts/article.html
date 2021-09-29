@@ -7,34 +7,18 @@ layout: default
       <img src="{{ page.banner | prepend: site.image_serve_path }}" alt="">
     </section>
 
-    <aside class="buy">
-      <section class="vendors">
+    <aside class="references">
+      <section class="links">
         <h2>Buy</h2>
-        {% if page.vendors %}
-          {% for vendor in page.vendors %}
-
-            {% if vendor.title == "Gumroad" %}
-              <script src="https://gumroad.com/js/gumroad.js"></script>
+        {% if page.links %}
+          {% for link in page.links %}
 
               <section>
                 <header>
-                  <h3 class="type-level-4">Gumroad (Best value)</h3>
-                  <a class="gumroad-button" href="https://gum.co/socialnetworkingicons"
-                  style="background-image: none !important; color: var(--color-text-inverted) !important; border-radius: 0 !important"
-                  target="_blank">Buy direct</a>
-                  <p>{{ vendor.licence }}</p>
+                  <a class="button-secondary {{ link.title | downcase }}" href="{{ link.url}}">{{ link.title | escape_once }}</a>
+                  <p>{{ link.licence }}</p>
                 </header>
               </section>
-
-            {% else %}
-
-              <section>
-                <header>
-                  <a class="button-secondary {{ vendor.title | downcase }}" href="{{ vendor.url}}">{{ vendor.title | escape_once }}</a>
-                  <p>{{ vendor.licence }}</p>
-                </header>
-              </section>
-            {% endif %}
 
           {% endfor %}
         {% endif %}

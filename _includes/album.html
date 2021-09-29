@@ -1,0 +1,46 @@
+<link href="/css/lightbox.css" rel="stylesheet" />
+<div class="layout layout-gallery">
+<!--ydiv id="{{include.albumname}}">-->
+<!--<div id="{{include.albumname}}" class="layout layout-1col-narrow">-->
+
+    {% for image in site.static_files %}
+    {% unless image.path contains 'thumbnails/' %}
+        {% if image.path contains 'images/galleries' and image.path contains include.albumname %}
+            <a href="{{ image.path }}" data-lightbox="{{ include.albumname }}" data-title="CAPTIOn">
+                <figure class="image-wrapper 2">
+                    <img src="/thumbnails{{ image.path }}" />
+                </figure>
+            </a>
+        {% endif %}
+        {% endunless %}
+    {% endfor %}
+
+</div>
+<script type="text/javascript" src="/assets/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 175,
+        'wrapAround': false,
+        'albumLabel': "{{ include.albumname | capitalize }} - Image %1 of %2",
+        'fadeDuration': 400,
+        'imageFadeDuration': 400,
+        'positionFromTop': 100,
+        'alwaysShowNavOnTouchDevices': true
+    })
+</script>
+<!--<script>
+    $('#{{include.albumname}}').lightGallery({
+    thumbnail:true
+});
+</script>-->
+<!--<script type="text/javascript" src="../../assets/js/lightbox.js">
+
+    $('#gallery a').each(function(indx, element){
+        $(element).lightBox();
+    });
+ 
+
+</script>
+
+<link rel="stylesheet" href="/css/lightbox.css">-->
+

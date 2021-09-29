@@ -36,22 +36,22 @@ sitemap: true
 {% capture previewImagePath %}{{ site.image_serve_path | append: '/research/'}}{{ fontSlug }}{% endcapture %}
 
 {% capture firstVendorURL %}
-    {% for vendor in article.vendors limit:1 %}{{ vendor.url }}{% endfor%}
+    {% for vendor in article.links limit:1 %}{{ vendor.url }}{% endfor%}
 {% endcapture %}
 
 <article class="article-listing">
   <div class="article-listing-details">
     <h2 class="article-listing-title type-level-3"><a href="{{ firstVendorURL }}">{{ article.title }}</a></h2>
     <p class="article-listing-styles title-label">{{ article.font_weights | size }} Styles</p>
-    {% for vendor in article.vendors limit:3 %}
-    {% capture vendorReferral %}{% if vendor.title == "Fontspring"%}?refby=mattgrey{% endif %}{% endcapture %}
-  <a class="{% if forloop.first == true %}button-secondary button--small {% else %}article-listing-link-tertiary{% endif %} article-listing-vendor-link formatted-link" href="{{ vendor.url | append: vendorReferral }}" title="View/purchase on {{ vendor.title }} ({{ vendor.licence }} license)">{{ vendor.title }}</a> {% if forloop.last == false %}<span class="article-listing-vendor-link-separator">/</span>{% endif %}
-    {% endfor %}
+    {% for link in article.links limit:3 %}
+    {% capture vendorReferral %}{% if link.title == "Fontspring"%}?refby=mattgrey{% endif %}{% endcapture %}
+  <a class="{% if forloop.first == true %}button-secondary button--small {% else %}article-listing-link-tertiary{% endif %} article-listing-vendor-link formatted-link" href="{{ link.url | append: vendorReferral }}" title="View/purchase on {{ link.title }} ({{ link.licence }} license)">{{ link.title }}</a> {% if forloop.last == false %}<span class="article-listing-link-separator">/</span>{% endif %}
+      {% endfor %}
   </div>
 
   <div class="article-listing-preview">
     <div class="article-listing-preview-overflow">
-      <img src="{{ previewImagePath }}/{{ fontSlug }}.svg" alt="{{ article.title }}">
+      <img src="{{ previewImagePath }}/{{ fontSlug }}.png" alt="{{ article.title }}">
     </div>
   </div>
 

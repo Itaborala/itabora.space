@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# plugins:
+#plugins:
 
 exclude:
   - readme.md
@@ -15,6 +15,7 @@ exclude:
   - mg-fonts
   - mg-projects
   - ftp.sh
+  - create_thumbnails.sh
 
 include:
   - _pages
@@ -123,3 +124,4 @@ defaults:
       type: "origamis"
     values:
       layout: "origami"
+

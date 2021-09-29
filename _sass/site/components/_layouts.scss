@@ -185,3 +185,23 @@
     }
   }
 }
+.layout-gallery {
+  @extend .grid-container;
+
+  .image-wrapper {
+    @include grid-column(6);
+
+    @include grid-media(tablet) {
+      @include grid-column(6);
+    }
+
+    @include grid-media(desktop) {
+      @include grid-column(6);
+    }
+    transition: 0.25s ease;
+  }
+  .image-wrapper:hover{
+      transform: scale(1.5);
+  }
+}
+
