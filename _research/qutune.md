@@ -1,16 +1,18 @@
 ---
-date: 2012-08-25
+date: 2021_01_11
 published: true
 order_number: 1
 title: "QuTune"
-description: "Quantum Computer & Music Resources"
+description: "Quantum Computer Music Resources"
 categories: Research Project
+type: "Research Project"
 thumbnail: "/research/beehive/test.svg"
-banner: "/research/beehive/overview.png"
+banner: "/research/qutune/qutune.png"
 licensetype: Commercial
 
 features:
   - 4 available styles types
+  - more
 
 available_licenses:
   - Web
@@ -24,13 +26,13 @@ font_weights:
   - "Condensed"
 
 links:
-  - title: "Arxiv"
-    licence: Webfont & Desktop
-    url: "https://arxiv.org/"
+  - title: "QuTune Website"
+    licence: 
+    url: "https://iccmr-quantum.github.io/"
 
-  - title: "Arxiv"
+  - title: "QuTune @ ICCMR"
     licence: Webfont & Desktop
-    url: "https://arxiv.org/"
+    url: "https://www.plymouth.ac.uk/research/iccmr/qutune"
 
 initial_release: 2012
 designed_from: 2012
