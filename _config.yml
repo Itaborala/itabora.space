@@ -16,6 +16,9 @@ exclude:
   - mg-projects
   - ftp.sh
   - create_thumbnails.sh
+  - captions
+  - insert_captions.sh
+
 
 include:
   - _pages

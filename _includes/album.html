@@ -6,7 +6,8 @@
     {% for image in site.static_files %}
     {% unless image.path contains 'thumbnails/' %}
         {% if image.path contains 'images/galleries' and image.path contains include.albumname %}
-            <a href="{{ image.path }}" data-lightbox="{{ include.albumname }}" data-title="CAPTIOn">
+            
+            <a href="{{ image.path }}" data-lightbox="{{ include.albumname }}" data-title="{% exiftag image_description, , {{ image.path }} %}">
                 <figure class="image-wrapper 2">
                     <img src="/thumbnails{{ image.path }}" />
                 </figure>

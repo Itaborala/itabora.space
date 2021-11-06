@@ -9,7 +9,7 @@ body.lb-disable-scrolling {
   z-index: 9999;
   background-color: rgb(14, 19, 22);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.84;
+  opacity: 0.94;
   display: none;
 }
 

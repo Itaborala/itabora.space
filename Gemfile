@@ -11,6 +11,7 @@ source "https://rubygems.org"
 source 'https://rubygems.org' do
   gem "ruby"
   gem "jekyll", "4.2.0"
+  gem "exifr"
 end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

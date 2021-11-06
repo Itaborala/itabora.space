@@ -43,9 +43,16 @@ title-class: instrument
         </div>
         {% endif %}
 
+          {% if page.classification %}
+          <div class="instrument-detail instrument-detail-6">
+            <h3 class="title-label">classification</h3>
+            <p>{{ page.classification }}</p>
+          </div>
+          {% endif %}
+
           {% if page.time_period %}
           <div class="instrument-detail instrument-detail-6">
-            <h3 class="title-label">Year</h3>
+            <h3 class="title-label">Construction Period</h3>
             <p>{{ page.time_period }}</p>
           </div>
           {% endif %}
@@ -68,19 +75,16 @@ title-class: instrument
   <section>
   {% if page.albumname %}
   <div>
-  
   <ol>
-  {% include album.html albumname="trilobita" %}
+  {% include album.html albumname=page.albumname %}
   </ol>
   </div>
   {% endif %}
   </section>
-
-
   {% if page.content %}
   <section class="additional-content-wrapper">
-    <div class="additional-content">
-      {{ content }}
+    <div class="additional-content paragraph-small" >
+      {{ page.details | markdownify }}
     </div>
   </section>
   {% endif %}
