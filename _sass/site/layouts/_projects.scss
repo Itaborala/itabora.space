@@ -41,7 +41,7 @@ $thumb-animation-ease-out: ease-in-out;
     }
 
     @include grid-media(desktop) {
-      @include grid-column(4);
+      @include grid-column(6);
     }
   }
 }

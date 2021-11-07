@@ -5,14 +5,14 @@ permalink: /instruments/
 priority: 0.9
 ---
 
-<div class="projects-intro-wrapper">
+<div class="instruments-intro-wrapper">
 <!--  <p class="projects-intro type-level-1">Project Paulo&nbsp;Vitor&nbsp;Itaboraí is a Music Technologist and Multimedia Artist living in São&nbsp;Paulo,&nbsp;Brazil.</p>-->
-<p class="projects-intro type-level-2">!PAGE UNDER CONSTRUCTION! </br> Experimental Acoustic Instrument Construction Projects</p>
+<p class="instruments-intro type-level-2">!PAGE UNDER CONSTRUCTION! </br> Experimental Acoustic Instrument Construction Projects</p>
 </div>
 
-<div class="projects">
+<div class="instruments">
 {% for project in site.instruments reversed limit:include.limit %}
-  <article class="project-listing">
+  <article class="instrument-listing">
     <div class="thumbnail-wrapper">
       <a href="{{ project.url | prepend: site.baseurl }}">
         <div class="thumbnail-description-wrapper">
