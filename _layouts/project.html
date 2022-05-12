@@ -65,6 +65,11 @@ title-class: project
     {% include layout.html %}
   {% endfor %}
   </section>
+  {% if page.youtube %}
+  <div class="project-info">
+    <iframe width="1280" height="720" src="{{ page.youtube.url }}" title="{{ page.youtube.name }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+  </div>
+  {% endif %}
 
   {% if page.content %}
   <section class="additional-content-wrapper">

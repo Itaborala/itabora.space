@@ -46,9 +46,19 @@ The words of this poem were very carefully written and positioned. The differenc
 &nbsp;
 \
 &nbsp;
-The words and their meanings:  [I NEED TO WRITE THIS PART!]
+The words and their meanings: The words take some advantage from the portuguese laguage. For example, the word "escrita" can mean "written" as something that was written in a piece of paper, or in a sentence like "written language". It is also a synonym of "escritura", for example in the context: *the act of writing*. Then, of course, the artistic exchange from *s* to *x* to indicate the action of *ex*-writing, *post*-writing, maybe indicating the end of a way of writing. *Writing posthumously to the end of written language.* 
+In addition to that, there is a very interesting use of the word "escritura" in the music academy: *escritura musical* (musical writing). This definition is not about the act of writing musical notes on the score, but rather the process *before* writitng, before conceptualizing the notes and specific instruments. *The raw compositional idea devoid of musical language and notation.* That is the main interpretation and inspiration for the word "excritura" - The raw idea that culminates into ex-written language. Concluding: You have the end of writing as soon as the idea of *excritura* appears, and then a shift occurs in the way we transform our ideas into readable information.
 \
 &nbsp;
 \
 &nbsp;
-Writing and Discovering - [I NEED TO WRITE THIS PART!]
+Writing, Discovering and the Library of Babel: To season everything, we add the "meta" layer, which was the act of (ex)writing the actual poem. *The Library of Babel* is a fictional tale/written image made by Jorge Luis Borges. It imagines an infinite library, consited of an infinite number of  connected hexagonal rooms, each one, with 4 walls, 5 shelfs per wall, 32 books per shelf, 410 pages per book, each page containing the same amount of characters. This library stores all of the possible combinations of characters of the english alphabet, including spaces, commas and dots. You can argue that all of the books ever written in english, or book translations from other languages, can be found whith their pages scattered throughout the library; The immediate result of this proposition means that *All of the books and  knowledge that will ever be written in english by humanity, at any given time, can be found inside this library, before it was even written by someone with a process of "escritura".* (all of the wrong and misleading versions of these books are there as well). 
+\
+&nbsp;
+\
+&nbsp;
+This synthesizes an idea that with access to that much information, we don't need to actually transform our "escritura" into "escrita" anymore if we can *find* it - hence *excritura*, a process of searching through infinite random information and finding what has already been abstractly written. But how is all this nonsense related to the actual process of producing this poem? The thing is: *The whole library of babel exists today, and is accessible on the web*. \
+&nbsp;
+\
+&nbsp;
+The [libraryofbabel.info](http://libraryofbabel.info) website was implemented by Jonathan Basile, and it produces all of the possible combinations that can be written on a 3200 characteer page with english letters, spaces, commas and dots. It is generated using a clever hashing algorithm, in a way that you can index all of the pages, and search for specific content that a page may contain. I wrote the *,excritura,* poem, character by character, inside this search mechaninsm, until I found the right addres, where this poem is indexed inside the digital library. The index size to the page is as large as the content of the poem itself, but *it was, arguably, already there, waiting to be found, waiting to be ex-written*.
