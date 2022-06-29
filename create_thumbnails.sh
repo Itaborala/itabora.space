@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ALBUM=images/galleryv2/$1
+ALBUM=images/galleries/$1
 
 #cd $ALBUM
 
