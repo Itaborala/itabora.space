@@ -70,6 +70,7 @@ GEM
     tzinfo-data (1.2022.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
 
 PLATFORMS
   java
@@ -83,6 +84,7 @@ DEPENDENCIES
   jekyll (= 4.2.2)!
   ruby!
   tzinfo-data
+  webrick!
 
 BUNDLED WITH
-   1.17.2
+   2.3.24
